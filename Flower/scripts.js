@@ -67,15 +67,15 @@ $('.leftButton').click(() => {
 loadPhoto(currentPhoto);
 })
 
+function mclick(index) {
+    currentPhoto=index;
+    loadPhoto(currentPhoto);
+}
+
 imagesDAta.forEach((item, index) => {
-    $('.thumbnails').append(`<div class="box" 
-    data-index="${index}"> ${item} 
-    (data-index="${index}" ) </div>`);
-    $('.box').click((event) => {
-        let indexClicked = $(event.target).attr('data-index');
-        let numberIndex = parseInt(indexClicked);
-
-        $('#clicked').text(data[indexClicked]);
-    })
+    $('.thumbnails').append(`
+    <div onclick="mclick(${index})" class="box"> 
+        <img class="thumbnailImg" src="${item.photo} ">
+     </div>`);
+  
 })
-
