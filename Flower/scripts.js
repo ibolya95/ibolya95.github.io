@@ -67,5 +67,15 @@ $('.leftButton').click(() => {
 loadPhoto(currentPhoto);
 })
 
+imagesDAta.forEach((item, index) => {
+    $('.thumbnails').append(`<div class="box" 
+    data-index="${index}"> ${item} 
+    (data-index="${index}" ) </div>`);
+    $('.box').click((event) => {
+        let indexClicked = $(event.target).attr('data-index');
+        let numberIndex = parseInt(indexClicked);
 
+        $('#clicked').text(data[indexClicked]);
+    })
+})
 
