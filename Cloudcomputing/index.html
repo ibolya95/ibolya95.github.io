@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//HU" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloudcomputing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="topsection">
+            <div class="innertube">
+                <h1>Hálózati ismeretek I.</h1>
+
+            </div>
+        </div>
+
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class= "innertube">
+                    <h2>Cloudcomputing (Felhő alapú szolgáltatások)</h2>
+                    <h3>Készítette: Jurinka Ibolya</h3>
+                    <p>
+                        <a target="_blank" href="http://www.technet.hu/notebook/20111029/5_dolog_amit_a_felho-alapu_szolgaltatasokrol_tudni_akartal/">A felhő szolgáltatások lényege</a>, hogy a helyi számítógépekről és szerverekről leveszik a terhet oly módon, hogy valamennyi fájlt, e-mailt, vállalati naptárt egy központi, internetes külső szerveren tárolnak. Az erőforrásokat a felhő szolgáltató biztosítja, nem a felhasználó problémája. Előnye, hogy ez a külső szerver biztonságos, és gyakorlatilag bárhonnan elérhető, bármilyen eszközről rá tudunk csatlakozni, nem csak a személyi számítógépünkkel, hanem akár <a target="_blank" href="http://pcworld.hu/kozosseg/a-legjobb-felho-alapu-tarhelyek-2015-ben.html">mobillal</a>, tablettel, laptoppal. Adataink tehát egy központi szerverparkban vannak fizikailag, és így bármi történhet informatikai eszközünkkel, ez adatvesztéssel nem fog járni, mivel a szolgáltató folyamatosan menti az adatokat. Ellenben, ha fájljainkat a winchesteren tároljuk, és elromlik a számítógépünk, akkor az összes fájlunk elveszik az újratelepítéskor. Ugyanez mobil vagy tablet esetében, ha elveszítjük a készüléket vagy az SD kártyát, az összes képünk, zenénk, dokumentumunk is elveszik. </p>
+                    <p>
+                        Mindezek ellenére azonban sokan szkeptikusok és bizalmatlanok a felhővel, már ami a biztonságos adattárolást illeti. Az interneten például nemrég megjent egy olyan rémhírt terjesztő <a target="_blank" href="http://itcafe.hu/hir/mindent_fajlhoz_hozzanyul_a_dropbox.html">cikk</a>, amelyben az áll, hogy az egyik legrégebbi felhő szolgáltatás, a Dropbox minden, számítógépen tárolt adatunkhoz hozzáfér, és "fájlokat lop" a helyi winchesterről. Ez pontosan azt jelenti, hogy a Dropbox a vele megosztott mappákon kívüli mappákból is tölt fel fájlokat a szervereire (amit elvileg nem lenne szabad neki). Ezt M. Mekin Pessen, a bejegyzés szerzője úgy vette észre, hogy néhány fájlt létrehozott a megosztási mappákon kívül, és a megfigyelésükre állított egy DLP szoftvert, ami arra való, hogy meggátolja az adatszivárgást. A program rögtön riasztott, mert tényleg adatszivárgás történt, és a tűzfal pedig a Dropbox szerverére mutatott. Tehát a Dropbox valóban hozzányúlt a létrehozott fájlokhoz. Egy nappal későbbi <a target="_blank" href="http://itcafe.hu/hir/leteszteltuk_nem_lop_adatot_a_dropbox.html"> cikkben </a> azonban megcáfolták, hogy valóban fájlokat lop a Dropbox. Egyszerűen csak annyi történik, hogy minden újonnan létrehozott dokumentumról információt kér le a Dropbox (pontosabban nem is a Dropbox, hanem a shell32.dll), hogy megtudja az adott fájl teljes elérési útvonalát, hogy el tudja dönteni, szükséges-e a szinkronizálás vagy sem. Ezt a folyamatot egyébként bárki ellenőrizheti, és így lényegében tényleg hozzáfér minden adatunkhoz, de csak e célból. A dokumentumok tartalmát tehát nem olvassa a Dropbox, és kizárólag a vele megosztott mappákkal szinkronizál. Ami pedig az adatlopást illeti, tény és való, hogy az új dokumentumok létrehozását követően kapcsolat jött létre a szerver és kliens között, de a közelében sem járt a továbbított adatmennyiség a fájl valódi méretéhez. Így az adatlopásról való hír értelmét vesztette, de ez is érzékelteti, hogy mennyire bizalmatlanok az emberek a felhős szolgáltatásokkal. </p>
+
+                    <p>Egy másik nagy előny, hogy a felhő szolgáltatások igénybe vételével jelentős tárhelyet tudunk felszabadítani helyi merevlemezünkön, így nem kell állanódan azzal bajlódnunk, hogy fájlokat törölgetünk a számítógépünkről. Manapság már számos felhő szolgáltatás közül választhatunk, melynek többsége bizonyos méretig <a target="_blank" href="http://pcworld.hu/kozosseg/a-legjobb-felho-alapu-tarhelyek-2015-ben.html">ingyen tárhelyet</a> is kínál . A google drive és a Microsoft OneDrive például 15 GB-ig biztosítja a szabad tárhelyet, míg a Dropboxhoz alapból csak 2 GB jár, de számos legális módon lehet <a target=_"blank" href="http://icuccok.hu/2015/03/31/hogyan-szerezz-ingyen-dropbox-tarhelyet/">növelni a tárhelyet </a>. Az egyik legjobb módszer, hogy ismerősöket invitálunk, hogy csatlakozzanak a Dropboxhoz. Így minden regisztrált ismerős után 500 megabájttal bővül a tárhelyünk. Egy másik lehetőség, hogy Twitter és Dropbox fiókunkat összekötjük, illetve, hogy követjük a Dropbox hivatalos oldalát twitteren. Ezekért egyenként +125 megabájt jár. Ha azonban még így is kevésnek bizonyul Dropbox tárhelyünk, évi 100 dollárért 1 terrabájtnyi helyet kaphatunk. A legújabb és legkedvezőbb felhő szolgáltatás tárhely szempontjából azonban a <a target="_blank" href="http://index.hu/tech/2015/03/26/vegtelen_tarhelyet_kinal_az_amazon/">Cloud Drive </a>, amelyet az Amazon online webáruház gyárt. Ez a szolgáltatás végtelen tárhelyet kínál a felhasználóknak évi 60 dollárért, ami kifejezetten olcsónak számít, ezzel übereli a többi felhő szolgáltatót. Ez azt jelenti, hogy bármilyen formátumú, bármilyen típusú és méretű fájlt feltölthetünk ide korlátlan mennyiségben. Ráadásul 3 hónapig ingyenesen ki lehet próbálni, ami szintén nagyot dob a hírnevén.
+                    </p>
+                    <p>
+                        Felhő alapú szolgáltatást azonban nem csak magánembereknek éri meg igénybe venni, hanem cégeknek is. Egy <a target="_blank" href="http://www.piacesprofit.hu/kkv_cegblog/ennyivel-olcsobb-a-felho-a-cegeknek/"> gazdasági cikk </a> szerint egy 80 főt foglalkoztató cég évi 6 millió forintot tud spórolni, ha a helyi szervereken való tárolás helyett a felhős megoldást választja, hiszen saját szerverszobát fenntartani sokkal bonyolultabb és költségesebb, mint előfizetni egy felhős szolgáltatásra. Helyi tárolás esetén szükség van szerverekre, szerverszekrényre, de a szerverszoba megfelelő klimatizációját is biztosítani kell (hiszen a szerverek csak hűvösben működnek megfelelően), és a szervereket üzemeltető informatikusokat is ki kell fizetni. Egy tanulmány szerint a hagyományos adattárolás 20-22 000 forint havonta, míg a felhős mindössze 14-16 000 forint. Ennek ellenére azonban sok cég nem bízik a felhős megoldásban, hiszen azt gondolja, hogy nem biztonságos, és inkább költ többet helyi adattárolásra, mint kockáztatná az adatveszteséget. A felhős adattárolásnak azonban pont a biztonságosság a legnagyobb előnye, ezt a cikk is hangsúlyozza, de sokan a mai világban még bizalmatlanok vele kapcsolatban. Egy felmérés szerint azonban megállapítható, hogy a 20-25 főnél kevesebb alkalmazottat foglalkoztató, illetve a 60-80 alkalmazottal bíró cégek veszik igénybe leginkább a felhős adattárolás lehetőségét, és növekvő tendencia mutatkozik a piacon, már ami a felhőben való tárolást illeti. Egy nemrég megjelent <a target="_blank" href="http://www.piacesprofit.hu/infokom/tovabb-terjed-a-felho/">gazdasági tanulmány </a> szerint a felhő használata nélkül egyre nehezebb lesz a cégeknek boldogulniuk, hiszen a dolgozóknak és rendszergazdáknak egyre nagyobb igényük lesz arra, hogy bármit, bárhonnan és bármikor elérhessenek. A mobilitás tehát a munkavégzés alapvető szükségletei közé fog tartozni, és megvalósítása csak a felhő segítségével történhet.
+
+                    </p>
+                    <p>
+                        A felhő szolgáltatásokat tehát mindenkinek megéri választani, és a tendencia azt mutatja, hogy egyre többen igénybe is veszik. A sok bizalmatlan ember pedig idővel rá fog eszmélni, hogy az adatokat biztonságban tudhatják a felhőben, és, hogy a felhőé a jövő akár céges, akár magánszférában.
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="rightcolumn">
+            <div class="innertube">
+               
+                <div>
+                    <ul>
+                        
+
+                <a href="http://lis.elte.hu" title="Tanszéki honlap"><li>ELTE_LIS</li></a>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <a href="http://lis.elte.hu">LIS ELTE, Budapest</a>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
